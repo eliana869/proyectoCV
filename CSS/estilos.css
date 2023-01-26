@@ -11,45 +11,64 @@ body{
     margin-top: 100px;
 }
 
-.card{
-        border: 1px solid rgb(250, 250, 252)
-           
-}
+/**Barra de navegacion*/
 
-.card-text{
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode',
-    Geneva, Verdana, sans-serif;
+.navbar-brand{
+    font-family: 'Caveat', cursive;
+    font-family: 'Solitreo', cursive;
+    font-size: 20px; 
+    color: white; 
+    font-weight: bolder;  
+}
+.nav-link{
+    font-family: 'Caveat', cursive;
+    font-family: 'Solitreo', cursive;
     font-size: large;
-    font-style: oblique;
+    color: white
 }
 
-.card-title{
-    font-family: caveat, cursive;
-    font-size: 80px;
-    
+/**contenido del cv: sobre mi, objetivos, experiencia, formación y conocimientos*/
+
+#col2{
+    position: absolute;
+    right: 0ch;
 }
-/**Lista de datos personales*/
+
+#contacto{
+    margin-top: 0px;
+}
+
+h5{
+    font-family: caveat, cursive;
+    font-size: 60px;
+}
+
+p{
+    font-size: larger;
+    font-family: 'Caveat', cursive;
+    font-family: 'Solitreo', cursive;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
 .list-group1{
     font-weight: bold;
     font-size: large;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode',
-    Geneva, Verdana, sans-serif;
-}
-#contacto{
-    margin-top: 100px;
-}
-
-/**Lista de Experiencia, formaciòn y conocimientos*/
-.list-group{
+    font-family: 'Caveat', cursive;
+    font-family: 'Solitreo', cursive;
     list-style: none;
 }
 
-.btn-primary{
-             background-color: gray;
-             border-color: gray;
+.list-group2{
+    font-size: large;
+    font-family: 'Caveat', cursive;
+    font-family: 'Solitreo', cursive;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    list-style: none;
 }
 
-/**Formulario*/
+/**Formulario de contacto*/
 .hide{
     display: none;
 }
@@ -58,10 +77,40 @@ body{
     display: block;
 }
 
-/**Media-query*/
-/**@media (max-width: 768px){
-    img{
-        width: 80%;
-    }
-}*/
+#col1{
+    position: fixed;
+    left: 0ch;
+    margin-top: -40px;
+}
 
+#p1{
+    font-size: larger;
+    margin-top: 5px;
+    margin-bottom: 20px;
+}
+
+.form-label{
+    font-family: caveat, cursive;
+    font-size: 22px;
+    margin: 0px;
+    padding: 0px;
+}
+
+.btn{
+    background-color: gray;
+    border-color: gray;
+    font-family: caveat, cursive;
+    font-size: 20px;
+}
+
+/**Media-query*/
+@media (max-width: 992px){
+    #col1{
+        position: relative;
+    }
+
+    #col2{
+        position: relative;
+        margin-top: auto;
+    }
+}
