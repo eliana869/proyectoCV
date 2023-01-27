@@ -96,6 +96,10 @@ p{
     padding: 0px;
 }
 
+strong{
+    color: red;
+}
+
 .btn{
     background-color: gray;
     border-color: gray;
